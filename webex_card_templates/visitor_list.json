@@ -1,0 +1,32 @@
+{
+    "type": "AdaptiveCard",
+    "version": "1.0",
+    "body": [
+        {
+            "type": "TextBlock",
+            "text": "Visitor Management",
+            "wrap": true
+        },
+        {
+            "type": "TextBlock",
+            "text": "Your Visitors:",
+            "wrap": true,
+            "size": "Large",
+            "weight": "Bolder"
+        },
+        {
+            "type": "FactSet",
+            "facts": [
+                {
+                    "title": "Fact 1",
+                    "value": "Value 1"
+                },
+                {
+                    "title": "Fact 2",
+                    "value": "Value 2"
+                }
+            ]
+        }
+    ],
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json"
+}

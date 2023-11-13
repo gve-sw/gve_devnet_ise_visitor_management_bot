@@ -1,0 +1,452 @@
+{
+    "type": "AdaptiveCard",
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+    "version": "1.0",
+    "body": [
+        {
+            "type": "TextBlock",
+            "text": "Visitor Management",
+            "wrap": true
+        },
+        {
+            "type": "TextBlock",
+            "text": "Register a Visitor",
+            "wrap": true,
+            "size": "Large",
+            "weight": "Bolder"
+        },
+        {
+            "type": "ColumnSet",
+            "columns": [
+                {
+                    "type": "Column",
+                    "width": 10,
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "text": "Building:*",
+                            "wrap": true
+                        }
+                    ]
+                },
+                {
+                    "type": "Column",
+                    "width": 30,
+                    "items": [
+                        {
+                            "type": "Input.ChoiceSet",
+                            "choices": [
+                                {
+                                    "title": "Building 1, Example Street 1, Berlin",
+                                    "value": "Building 1, Example Street 1, Berlin"
+                                },
+                                {
+                                    "title": "Building 2, Example Street 2, Hamburg",
+                                    "value": "Building 2, Example Street 2, Hamburg"
+                                },
+                                {
+                                    "title": "Building 3, Example Street 3, Bonn",
+                                    "value": "Building 3, Example Street 3, Bonn"
+                                }
+                            ],
+                            "placeholder": "Choose a building",
+                            "value": "All",
+                            "id": "building"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "ColumnSet",
+            "columns": [
+                {
+                    "type": "Column",
+                    "width": 10,
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "text": "Start Date:*    ",
+                            "wrap": true
+                        }
+                    ],
+                    "horizontalAlignment": "Left"
+                },
+                {
+                    "type": "Column",
+                    "width": 30,
+                    "items": [
+                        {
+                            "type": "Input.Date",
+                            "id": "start_date"
+                        }
+                    ]
+                }
+            ]
+        }, {
+            "type": "ColumnSet",
+            "columns": [
+                {
+                    "type": "Column",
+                    "width": 10,
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "text": "",
+                            "wrap": true
+                        }
+                    ],
+                    "horizontalAlignment": "Left"
+                },
+                {
+                    "type": "Column",
+                    "width": 30,
+                    "items": [
+                        {
+                            "type": "Input.Time",
+                            "id": "start_time"
+                        }
+                    ]
+                }
+            ]
+        },{
+            "type": "ColumnSet",
+            "columns": [
+                {
+                    "type": "Column",
+                    "width": 10,
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "text": "End Date:*    ",
+                            "wrap": true
+                        }
+                    ],
+                    "horizontalAlignment": "Left"
+                },
+                {
+                    "type": "Column",
+                    "width": 30,
+                    "items": [
+                        {
+                            "type": "Input.Date",
+                            "id": "end_date"
+                        }
+                    ]
+                }
+            ]
+        },{
+            "type": "ColumnSet",
+            "columns": [
+                {
+                    "type": "Column",
+                    "width": 10,
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "text": "",
+                            "wrap": true
+                        }
+                    ],
+                    "horizontalAlignment": "Left"
+                },
+                {
+                    "type": "Column",
+                    "width": 30,
+                    "items": [
+                        {
+                            "type": "Input.Time",
+                            "id": "end_time"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "ColumnSet",
+            "columns": [
+                {
+                    "type": "Column",
+                    "width": 10,
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "text": "First Name:*    ",
+                            "wrap": true
+                        }
+                    ],
+                    "horizontalAlignment": "Left"
+                },
+                {
+                    "type": "Column",
+                    "width": 30,
+                    "items": [
+                        {
+                            "type": "Input.Text",
+                            "placeholder": "",
+                            "id": "first_name"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "ColumnSet",
+            "columns": [
+                {
+                    "type": "Column",
+                    "width": 10,
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "text": "Last Name:*    ",
+                            "wrap": true
+                        }
+                    ],
+                    "horizontalAlignment": "Left"
+                },
+                {
+                    "type": "Column",
+                    "width": 30,
+                    "items": [
+                        {
+                            "type": "Input.Text",
+                            "placeholder": "",
+                            "id": "last_name"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "ColumnSet",
+            "columns": [
+                {
+                    "type": "Column",
+                    "width": 10,
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "text": "Phone Number:    ",
+                            "wrap": true
+                        }
+                    ],
+                    "horizontalAlignment": "Left"
+                },
+                {
+                    "type": "Column",
+                    "width": 30,
+                    "items": [
+                        {
+                            "type": "Input.Text",
+                            "placeholder": "",
+                            "id": "phone"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "ColumnSet",
+            "columns": [
+                {
+                    "type": "Column",
+                    "width": 10,
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "text": "Email:    ",
+                            "wrap": true
+                        }
+                    ],
+                    "horizontalAlignment": "Left"
+                },
+                {
+                    "type": "Column",
+                    "width": 30,
+                    "items": [
+                        {
+                            "type": "Input.Text",
+                            "placeholder": "",
+                            "id": "email"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "ColumnSet",
+            "columns": [
+                {
+                    "type": "Column",
+                    "width": 10,
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "text": "Company:    ",
+                            "wrap": true
+                        }
+                    ],
+                    "horizontalAlignment": "Left"
+                },
+                {
+                    "type": "Column",
+                    "width": 30,
+                    "items": [
+                        {
+                            "type": "Input.Text",
+                            "placeholder": "",
+                            "id": "company"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "ColumnSet",
+            "columns": [
+                {
+                    "type": "Column",
+                    "width": 10,
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "text": "Purpose of Visit:",
+                            "wrap": true
+                        }
+                    ]
+                },
+                {
+                    "type": "Column",
+                    "width": 30,
+                    "items": [
+                        {
+                            "type": "Input.ChoiceSet",
+                            "choices": [
+                                {
+                                    "title": "Interview",
+                                    "value": "Interview"
+                                },
+                                {
+                                    "title": "Client Meeting",
+                                    "value": "Client Meeting"
+                                },
+                                {
+                                    "title": "Partner Meeting",
+                                    "value": "Partner Meeting"
+                                },
+                                {
+                                    "title": "Personal",
+                                    "value": "Personal"
+                                },
+                                {
+                                    "title": "Service Vendor",
+                                    "value": "Service Vendor"
+                                },
+                                {
+                                    "title": "Refuse to Specifiy",
+                                    "value": "Refuse to Specifiy"
+                                }
+                            ],
+                            "placeholder": "Choose a purpose",
+                            "value": "All",
+                            "id": "purpose"
+                        }
+                    ]
+                }
+            ]
+        },{
+            "type": "ColumnSet",
+            "columns": [
+                {
+                    "type": "Column",
+                    "width": 10,
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "text": "Comment:    ",
+                            "wrap": true
+                        }
+                    ],
+                    "horizontalAlignment": "Left"
+                },
+                {
+                    "type": "Column",
+                    "width": 30,
+                    "items": [
+                        {
+                            "type": "Input.Text",
+                            "placeholder": "",
+                            "id": "comment"
+                        }
+                    ]
+                }
+            ]
+        },{
+            "type": "ColumnSet",
+            "columns": [
+                {
+                    "type": "Column",
+                    "width": 10,
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "text": "Check-In Visitor:    ",
+                            "wrap": true
+                        }
+                    ],
+                    "horizontalAlignment": "Left"
+                },
+                {
+                    "type": "Column",
+                    "width": 30,
+                    "items": [
+                        {
+                            "type": "Input.Toggle",
+                            "title": "Check-In Visitor",
+                            "id": "check_in"
+                        }
+                    ]
+                }
+            ]
+        },{
+            "type": "ColumnSet",
+            "columns": [
+                {
+                    "type": "Column",
+                    "width": 10,
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "text": "Badge ID:    ",
+                            "wrap": true
+                        }
+                    ],
+                    "horizontalAlignment": "Left"
+                },
+                {
+                    "type": "Column",
+                    "width": 30,
+                    "items": [
+                        {
+                            "type": "Input.Text",
+                            "placeholder": "",
+                            "id": "badge_id"
+                        }
+                    ]
+                }
+            ]
+        }
+        
+
+    ],
+    "actions": [
+        {
+            "type": "Action.Submit",
+            "title": "Submit",
+            "data": "createVisitor",
+            "style": "positive",
+            "id": "createVisitor"
+        }
+    ]
+}
